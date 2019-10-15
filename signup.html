@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signup</title>
+        <link rel="stylesheet" type="text/css" href="signup.css">
+        <script>           
+function addAccount() {
+             fnm = document.getElementById("fnm").value;
+             lnm = document.getElementById("lnm").value;
+             eml = document.getElementById("eml").value;
+             phn = document.getElementById("phn").value;
+             cnty = document.getElementById("country").value;
+             ste = document.getElementById("state").value;
+             rolebu = document.getElementById("rolebu").value;
+         var person={'fname':fnm,
+                'lname':lnm,
+                'email':eml,
+                'phone':phn,
+                'country':cnty,
+                'state':ste,
+                'rolem':rolebu
+         }
+         localStorage.setItem(eml,JSON.stringify(person));
+         localStorage.setItem("email",eml);
+         window.location.href='http://127.0.0.1:5500/login.html'
+    } 
+    </script>
+    </head>
+    
+    <body><div class="sign">
+        <h1>SignUp</h1><br>
+    </div>
+        <div class="fname" style="
+        padding-left: 260px;">
+           <h5>First Name:</h5> 
+           <input type="text" id = "fnm">
+        </div>
+        <div class="lname" style="
+        padding-right: 200px;">
+                <h5>Last Name:</h5> 
+                <input type="text" id = "lnm">
+         </div>
+         <div class="email">
+                    <h5>EMail:</h5> 
+                    <input type="text" id = "eml">
+        </div>
+         <div class="num">
+                        <h5>Work/Mobile Number:</h5> 
+                        <input type="text" id = "phn">
+        </div>
+        <div class="coun">
+                <h5>Country:</h5> 
+                <select id="country">
+                        <option value="India">India</option>
+                        <option value="Sri lanka">Sri lanka</option>
+                        <option value="Singapore">Singapore</option>
+                    </select><br>
+             </div>
+             <div class="state">
+                 <h5>State/Provience:</h5>
+                 <select id="state"><option value="Bihar">Bihar</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Uttranchal">Uttranchal</option>
+                </select>
+             </div>
+             <div class="role">
+                    <h5>Business Role:</h5>
+                    <select class="roleb" id="rolebu"><option value="Business Analyst">Business Analyst</option>
+                       <option value="Adminstrator">Adminstrator</option>
+                       <option value="Supervisor">Supervisor</option>
+                   </select>
+                </div>
+                <div class="terms">
+                    <h5>By proceeding,you agree to our <span style="color: red">terms and conditions</span> and <span style="color: red"> Policy</span></h5>
+                </div>
+        <div class="btn">
+            <button class="btn1" onclick="addAccount();" >SUBMIT</button>
+        </div>
+             
+         
+     
+
+    </body>
+</html> 

@@ -1,0 +1,76 @@
+
+.navigation{
+    margin-left: 45%;
+    padding: 0px;
+    background-color: rgb(255, 254, 254);
+}
+.menu li{
+    display: inline;
+    text-align: right;
+    padding: 10px;
+    border: 1px #ccc solid;
+    border-color: black;
+}
+.Image{
+    width: 100%;
+    background-image: url(https://www.moneycrashers.com/wp-content/uploads/2019/03/find-right-business-partner-1068x713.jpg);
+    height: 230px;
+    border: 1px #ccc solid;
+    border-color: black;
+}
+
+.btn{
+    width: 35%;
+    color: grey;
+    margin-left: 65%;
+    padding-top: 15%;
+    
+}
+.img_float{
+    display: flex;
+    width:100%;
+}   
+    
+}
+.img_float figure{
+    padding: 100px;
+   
+}
+.box{
+    width: 100%;
+    border: 1px #ccc solid;
+    border-color: black;
+    height: 150px;
+    margin-top: 0px;
+    background-image: url(https://www.serviceobjects.com/blog/wp-content/uploads/2014/12/iStock-627045724-Blog-4008.jpg)
+}
+    .box_text{
+    width: 100%;
+    border: 1px #ccc solid;
+    border-color: black;
+    height: 150px;
+}
+.section div{
+padding: 20px;
+display: flex;
+}
+.exist{
+    width: 40%;
+    float: left;
+}
+.exiemail{
+    margin-left: 35%;
+}
+.blog{
+    margin-left: 42%;
+}
+.ifdn{
+    margin-left: 33%;
+}
+.create{
+    margin-left: 320px;
+    width: 15%;
+}
+.new_usr{
+    margin-left: 320px;
+}

@@ -1,0 +1,52 @@
+.fname{
+    float:left;
+    width: 25%;
+}
+.lname{
+    float: right;
+    width: 35%;
+}
+.email{
+    padding-left: 260px;
+    float: left;
+}
+.num{
+    float: right;
+    width: 35%;
+    padding-right: 200px;
+}
+.coun{
+    padding-left: 260px;
+    float: left;
+    width: 25%;
+}
+.state{
+    float: right;
+    width: 35%;
+    padding-right: 200px;
+}
+.role{
+    padding-left: 260px;
+    float: left;
+    width: 85%;
+}
+.roleb{
+    width:60%;
+}
+.terms{
+    width:90%;
+    padding-top: 308px;
+    padding-left: 360px;
+}   
+.btn{
+    width:520px;
+    padding-left: 320px;
+    
+}
+.btn1{
+    width: 500px;
+    height: 70px;
+}
+.sign{
+    padding-left: 520px;
+}

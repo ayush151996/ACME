@@ -1,0 +1,42 @@
+.com_n{
+    width: 15%;
+    float:left;
+    padding-left: 410px;
+}
+.com_w{
+    width: 25%;
+    float: right;
+    padding-right: 312px;
+    
+}
+.cou{
+    width: 15%;
+    float: left;
+    padding-left: 410px;
+}
+.state{
+    width:15%;
+    float: right;
+    padding-right: 442px;
+}
+.descr{
+    width:85%;
+    padding-top: 250px;
+    padding-left: 200px;
+    padding-right: 250px;
+}
+.years{
+    width:45%;
+    float:left;
+    padding-left: 410px;
+}
+.noe{
+    width: 15%;
+    float: left;
+}
+.progress{
+    padding-left: 250px;
+}
+#com_nm{
+    padding-top: 0px;
+}

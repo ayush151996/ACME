@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your Account</title>
+        <script>
+            function logout(){
+                localStorage.removeItem("lastname");
+            }
+            function get(){
+                var accn = window.localStorage.getItem("lastname");
+            var usr = JSON.parse(window.localStorage.getItem(accn));
+                document.getElementById("fstnm").innerHTML=usr.fname;
+                document.getElementById("lstnm").innerHTML=usr.lname;
+                document.getElementById("mob").innerHTML=usr.phone;
+                document.getElementById("sta").innerHTML=usr.state;
+                document.getElementById("coun").innerHTML=usr.country;
+                document.getElementById("role").innerHTML=usr.rolem;
+
+            }
+        </script>
+    </head>
+    <body onload="get()">
+        <div id="logout" style="width: 90px;;float:right"><button class="logout" onclick="logout();window.location.href='http://127.0.0.1:5500/inidex.html'">logout</button></div>
+        <label>firstname:</label>
+        <label id="fstnm"></label>
+        <label>Lastname:</label>
+        <label id="lstnm"></label><br><br>
+        <label>Work/Mobile No.</label>
+        <label id="mob"></label><br><br>
+         <label>Residence</label>
+         <label id="sta"></label>
+         ,<label id="coun"></label>  <br><br>
+         <label>Role:</label>
+         <label id="role"></label>   
+         
+        
+    </body>
+</html>

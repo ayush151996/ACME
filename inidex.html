@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index</title>
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        <script>
+        function become_a_prtner(){
+        window.location.href='http://127.0.0.1:5500/become_a_partner.html'
+        }
+        function login_portal(){
+            window.location.href='http://127.0.0.1:5500/login.html'
+            }
+            function existing_partner(){
+            window.location.href='http://127.0.0.1:5500/signup.html'
+            }
+            function clicked(){
+    {
+       localStorage.setItem("lastname", document.getElementById("exist_email").value); 
+       } 
+    }</script>
+    </head>
+
+        <body>
+            <div class="navigation">
+                <ul class="menu">
+                    <li><a href = "#">Product</a></li>
+                    <li><a href = "#">Press Releases</a></li>
+                    <li><a href = "#">Resources</a></li>
+                    <li><a href = "#">Contact Sales</a></li>
+                    <li><a href = "#">Free Trials</a></li>
+                    <li><a href = "#">Support</a></li></ul>
+                </ul>
+            </div><br>
+            <div class = "Image">
+                <h3 style="color: black;float:left;width:50%">Join the fastest growing partner network today</h3>
+
+            <div class="btn">
+                <button class="b1" type="submit" onclick="become_a_prtner()">Become a partner</button>
+                <button class="b2" type="submit" onclick="login_portal()">Login to partner portal</button>
+            </div>
+            </div>
+            <div class="img_float">
+                <figure>
+                        <img src="image/technpart.JPG" style="padding: 100px;padding-bottom: 20px;" />
+                        <figcaption style="padding-left: 100px;
+                    "><h6 style="width:100px">business outcomes with core and emerging technologies that work in concert with the ...</h6> </figcaption>
+                </figure>
+                <figure>
+                        <img src="image/buisipart.JPG" style="padding: 100px;padding-bottom: 20px;" />
+                        <figcaption style="padding-left: 100px;
+                    "><h6 style="width:100px">Deliver Expert Skill.......</h6></figcaption>
+                </figure>
+                    <figure>
+                        <img src="image/trainpart.JPG" style="padding: 100px;padding-bottom: 20px;" />
+                        <figcaption style="padding-left: 100px;
+                    "><h6 style="width:100px">Offer the highest.</h6></figcaption>
+                    </figure>
+            </div><br>
+            <section class="box">
+                <h2 class="boc_txt" style="text-align: center">Why Partner with us?</h2>
+            </section>
+            
+            <section class="log">
+                <div class="exist">
+                    <h2 style="text-align: center">Are you an existing user</h2>
+                    <input type="text" name="existingemail" placeholder="EMail" class="exiemail" id="exist_email"></input><br>
+                    <br>
+                    <button class="blog" type="submit" onclick="clicked();window.location.href='http://127.0.0.1:5500/dashboard_account.html'">NEXT</button>
+                    <h6 class="ifdn">Don't have an user account?<span style="link:'#'">SignUp</span></h6>
+                </div>
+                <div class="wanp">
+                    <h2 style="text-align: center">Want to become a partner?</h2>
+                    <button class="create" type="submit" onclick="become_a_prtner()">CREATE AN ACCOUNT</button><br />
+                    <h2 style="text-align: center">Are you an existing partner?</h2>
+                    <button class="new_usr" type="submit" onclick="existing_partner()">NEW USER REGISTRATION</button>
+                </div>
+            </section>
+            <h6 style="text-align: center;width: 50%;padding-left: 300px">By proceeding,you agree to our <span class="terms">Terms and Conditions</span></h6>   
+            
+        </body>
+    </head>
+</html>
